@@ -18,7 +18,7 @@ class Postal implements \JsonSerializable
      *                  contain part of the postal code. This attribute is returned by all location
      *                  databases and services besides Country.
      */
-    public readonly ?string $code;
+    public $code;
 
     /**
      * @var int|null A value from 0-100 indicating MaxMind's
@@ -26,7 +26,7 @@ class Postal implements \JsonSerializable
      *               available from the Insights service and the GeoIP2 Enterprise
      *               database.
      */
-    public readonly ?int $confidence;
+    public $confidence;
 
     /**
      * @ignore

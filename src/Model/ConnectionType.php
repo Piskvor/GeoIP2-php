@@ -16,20 +16,20 @@ class ConnectionType implements \JsonSerializable
      *                  following values: "Dialup", "Cable/DSL", "Corporate", "Cellular", and
      *                  "Satellite". Additional values may be added in the future.
      */
-    public readonly ?string $connectionType;
+    public $connectionType;
 
     /**
      * @var string the IP address that the data in the model is
      *             for
      */
-    public readonly string $ipAddress;
+    public $ipAddress;
 
     /**
      * @var string The network in CIDR notation associated with
      *             the record. In particular, this is the largest network where all of the
      *             fields besides $ipAddress have the same value.
      */
-    public readonly string $network;
+    public $network;
 
     /**
      * @ignore

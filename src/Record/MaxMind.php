@@ -15,7 +15,7 @@ class MaxMind implements \JsonSerializable
      * @var int|null the number of remaining queries you
      *               have for the service you are calling
      */
-    public readonly ?int $queriesRemaining;
+    public $queriesRemaining;
 
     /**
      * @ignore

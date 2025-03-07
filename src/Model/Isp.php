@@ -15,53 +15,53 @@ class Isp implements \JsonSerializable
      * @var int|null the autonomous system number
      *               associated with the IP address
      */
-    public readonly ?int $autonomousSystemNumber;
+    public $autonomousSystemNumber;
 
     /**
      * @var string|null the organization
      *                  associated with the registered autonomous system number for the IP
      *                  address
      */
-    public readonly ?string $autonomousSystemOrganization;
+    public $autonomousSystemOrganization;
 
     /**
      * @var string|null the name of the ISP associated with the IP
      *                  address
      */
-    public readonly ?string $isp;
+    public $isp;
 
     /**
      * @var string|null The [mobile country code
      *                  (MCC)](https://en.wikipedia.org/wiki/Mobile_country_code) associated with
      *                  the IP address and ISP.
      */
-    public readonly ?string $mobileCountryCode;
+    public $mobileCountryCode;
 
     /**
      * @var string|null The [mobile network code
      *                  (MNC)](https://en.wikipedia.org/wiki/Mobile_country_code) associated with
      *                  the IP address and ISP.
      */
-    public readonly ?string $mobileNetworkCode;
+    public $mobileNetworkCode;
 
     /**
      * @var string|null the name of the organization associated
      *                  with the IP address
      */
-    public readonly ?string $organization;
+    public $organization;
 
     /**
      * @var string the IP address that the data in the model is
      *             for
      */
-    public readonly string $ipAddress;
+    public $ipAddress;
 
     /**
      * @var string The network in CIDR notation associated with
      *             the record. In particular, this is the largest network where all of the
      *             fields besides $ipAddress have the same value.
      */
-    public readonly string $network;
+    public $network;
 
     /**
      * @ignore

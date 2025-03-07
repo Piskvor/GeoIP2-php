@@ -17,7 +17,7 @@ class Location implements \JsonSerializable
      *               associated with the requested IP address. This attribute is only available
      *               from the Insights service.
      */
-    public readonly ?int $averageIncome;
+    public $averageIncome;
 
     /**
      * @var int|null The approximate accuracy radius in
@@ -26,21 +26,21 @@ class Location implements \JsonSerializable
      *               address resides within the circle centered at the latitude and longitude
      *               with the provided radius.
      */
-    public readonly ?int $accuracyRadius;
+    public $accuracyRadius;
 
     /**
      * @var float|null The approximate latitude of the location
      *                 associated with the IP address. This value is not precise and should not be
      *                 used to identify a particular address or household.
      */
-    public readonly ?float $latitude;
+    public $latitude;
 
     /**
      * @var float|null The approximate longitude of the location
      *                 associated with the IP address. This value is not precise and should not be
      *                 used to identify a particular address or household.
      */
-    public readonly ?float $longitude;
+    public $longitude;
 
     /**
      * @var int|null the metro code is a no-longer-maintained code for targeting
@@ -48,21 +48,21 @@ class Location implements \JsonSerializable
      *
      * @deprecated
      */
-    public readonly ?int $metroCode;
+    public $metroCode;
 
     /**
      * @var int|null The estimated population per square
      *               kilometer associated with the IP address. This attribute is only available
      *               from the Insights service.
      */
-    public readonly ?int $populationDensity;
+    public $populationDensity;
 
     /**
      * @var string|null The time zone associated with location, as
      *                  specified by the IANA Time Zone Database, e.g., "America/New_York". See
      *                  https://www.iana.org/time-zones.
      */
-    public readonly ?string $timeZone;
+    public $timeZone;
 
     /**
      * @ignore

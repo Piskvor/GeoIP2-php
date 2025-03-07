@@ -15,7 +15,7 @@ class AnonymousIp implements \JsonSerializable
      * @var bool this is true if the IP address belongs to
      *           any sort of anonymous network
      */
-    public readonly bool $isAnonymous;
+    public $isAnonymous;
 
     /**
      * @var bool This is true if the IP address is
@@ -23,44 +23,44 @@ class AnonymousIp implements \JsonSerializable
      *           register subnets under names associated with them, we will likely only
      *           flag their IP ranges using the isHostingProvider property.
      */
-    public readonly bool $isAnonymousVpn;
+    public $isAnonymousVpn;
 
     /**
      * @var bool this is true if the IP address belongs
      *           to a hosting or VPN provider (see description of isAnonymousVpn property)
      */
-    public readonly bool $isHostingProvider;
+    public $isHostingProvider;
 
     /**
      * @var bool this is true if the IP address belongs to
      *           a public proxy
      */
-    public readonly bool $isPublicProxy;
+    public $isPublicProxy;
 
     /**
      * @var bool this is true if the IP address is
      *           on a suspected anonymizing network and belongs to a residential ISP
      */
-    public readonly bool $isResidentialProxy;
+    public $isResidentialProxy;
 
     /**
      * @var bool this is true if the IP address is a Tor
      *           exit node
      */
-    public readonly bool $isTorExitNode;
+    public $isTorExitNode;
 
     /**
      * @var string the IP address that the data in the model is
      *             for
      */
-    public readonly string $ipAddress;
+    public $ipAddress;
 
     /**
      * @var string The network in CIDR notation associated with
      *             the record. In particular, this is the largest network where all of the
      *             fields besides $ipAddress have the same value.
      */
-    public readonly string $network;
+    public $network;
 
     /**
      * @ignore

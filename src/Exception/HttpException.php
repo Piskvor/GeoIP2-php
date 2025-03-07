@@ -12,7 +12,7 @@ class HttpException extends GeoIp2Exception
     /**
      * The URI queried.
      */
-    public string $uri;
+    public $uri;
 
     public function __construct(
         string $message,

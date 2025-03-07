@@ -11,13 +11,13 @@ abstract class AbstractPlaceRecord extends AbstractNamedRecord
      *               confidence that the location level is correct. This attribute is only available
      *               from the Insights service and the GeoIP2 Enterprise database.
      */
-    public readonly ?int $confidence;
+    public $confidence;
 
     /**
      * @var int|null The GeoName ID for the location level. This attribute
      *               is returned by all location services and databases.
      */
-    public readonly ?int $geonameId;
+    public $geonameId;
 
     /**
      * @ignore

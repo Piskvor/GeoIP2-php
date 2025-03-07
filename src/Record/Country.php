@@ -16,14 +16,14 @@ class Country extends AbstractPlaceRecord
      *           member state of the European Union. This attribute is returned by all
      *           location services and databases.
      */
-    public readonly bool $isInEuropeanUnion;
+    public $isInEuropeanUnion;
 
     /**
      * @var string|null The two-character ISO 3166-1 alpha code
      *                  for the country. See https://en.wikipedia.org/wiki/ISO_3166-1. This
      *                  attribute is returned by all location services and databases.
      */
-    public readonly ?string $isoCode;
+    public $isoCode;
 
     /**
      * @ignore

@@ -18,7 +18,7 @@ class Subdivision extends AbstractPlaceRecord
      *                  https://en.wikipedia.org/wiki/ISO_3166-2. This attribute is returned by all
      *                  location databases and services except Country.
      */
-    public readonly ?string $isoCode;
+    public $isoCode;
 
     /**
      * @ignore

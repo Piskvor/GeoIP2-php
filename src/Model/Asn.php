@@ -15,27 +15,27 @@ class Asn implements \JsonSerializable
      * @var int|null the autonomous system number
      *               associated with the IP address
      */
-    public readonly ?int $autonomousSystemNumber;
+    public $autonomousSystemNumber;
 
     /**
      * @var string|null the organization
      *                  associated with the registered autonomous system number for the IP
      *                  address
      */
-    public readonly ?string $autonomousSystemOrganization;
+    public $autonomousSystemOrganization;
 
     /**
      * @var string the IP address that the data in the model is
      *             for
      */
-    public readonly string $ipAddress;
+    public $ipAddress;
 
     /**
      * @var string The network in CIDR notation associated with
      *             the record. In particular, this is the largest network where all of the
      *             fields besides $ipAddress have the same value.
      */
-    public readonly string $network;
+    public $network;
 
     /**
      * @ignore

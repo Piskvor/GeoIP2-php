@@ -11,14 +11,14 @@ abstract class AbstractNamedRecord implements \JsonSerializable
      *                  passed to the constructor. This attribute is returned by all location
      *                  services and databases.
      */
-    public readonly ?string $name;
+    public $name;
 
     /**
      * @var array<string, string> An array map where the keys are locale codes
      *                            and the values are names. This attribute is returned by all location
      *                            services and databases.
      */
-    public readonly array $names;
+    public $names;
 
     /**
      * @ignore

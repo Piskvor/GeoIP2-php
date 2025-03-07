@@ -16,13 +16,13 @@ class Continent extends AbstractNamedRecord
      *                  America) or "OC" (Oceania). This attribute is returned by all location
      *                  services and databases.
      */
-    public readonly ?string $code;
+    public $code;
 
     /**
      * @var int|null The GeoName ID for the continent. This
      *               attribute is returned by all location services and databases.
      */
-    public readonly ?int $geonameId;
+    public $geonameId;
 
     /**
      * @ignore

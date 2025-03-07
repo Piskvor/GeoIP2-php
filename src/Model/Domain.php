@@ -16,20 +16,20 @@ class Domain implements \JsonSerializable
      *                  IP address. This will be something like "example.com" or
      *                  "example.co.uk", not "foo.example.com".
      */
-    public readonly ?string $domain;
+    public $domain;
 
     /**
      * @var string the IP address that the data in the model is
      *             for
      */
-    public readonly string $ipAddress;
+    public $ipAddress;
 
     /**
      * @var string The network in CIDR notation associated with
      *             the record. In particular, this is the largest network where all of the
      *             fields besides $ipAddress have the same value.
      */
-    public readonly string $network;
+    public $network;
 
     /**
      * @ignore

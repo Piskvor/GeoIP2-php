@@ -18,7 +18,7 @@ class RepresentedCountry extends Country
      *                  representing the country. Currently we only return <code>military</code>
      *                  but this could expand to include other types in the future.
      */
-    public readonly ?string $type;
+    public $type;
 
     /**
      * @ignore

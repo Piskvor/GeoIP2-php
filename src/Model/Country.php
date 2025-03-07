@@ -20,19 +20,19 @@ class Country implements \JsonSerializable
     /**
      * @var Continent continent data for the requested IP address
      */
-    public readonly Continent $continent;
+    public $continent;
 
     /**
      * @var CountryRecord Country data for the requested IP address. This
      *                    object represents the country where MaxMind believes
      *                    the end user is located.
      */
-    public readonly CountryRecord $country;
+    public $country;
 
     /**
      * @var MaxMind data related to your MaxMind account
      */
-    public readonly MaxMind $maxmind;
+    public $maxmind;
 
     /**
      * @var CountryRecord Registered country data for the requested IP address.
@@ -40,7 +40,7 @@ class Country implements \JsonSerializable
      *                    registered a given IP block and may differ from the
      *                    user's country.
      */
-    public readonly CountryRecord $registeredCountry;
+    public $registeredCountry;
 
     /**
      * @var RepresentedCountry Represented country data for the requested IP
@@ -49,12 +49,12 @@ class Country implements \JsonSerializable
      *                         when the represented country differs from the
      *                         country.
      */
-    public readonly RepresentedCountry $representedCountry;
+    public $representedCountry;
 
     /**
      * @var Traits data for the traits of the requested IP address
      */
-    public readonly Traits $traits;
+    public $traits;
 
     /**
      * @ignore

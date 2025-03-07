@@ -44,14 +44,14 @@ use MaxMind\Db\Reader\Metadata;
  */
 class Reader implements ProviderInterface
 {
-    private DbReader $dbReader;
+    private $dbReader;
 
-    private string $dbType;
+    private $dbType;
 
     /**
      * @var array<string>
      */
-    private array $locales;
+    private $locales;
 
     /**
      * Constructor.
