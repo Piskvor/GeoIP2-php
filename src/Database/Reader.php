@@ -66,6 +66,7 @@ class Reader implements ProviderInterface
         string $filename,
         array $locales = ['en']
     ) {
+        @require_once(__DIR__ . '/../polyfill_str.php');
         $this->dbReader = new DbReader($filename);
         $this->dbType = $this->dbReader->metadata()->databaseType;
         $this->locales = $locales;
