@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "maxmind-db/reader": "^1.12.0",
+        "maxmind-db/reader": "^1.11",
         "php": ">=7.3",
         "ext-json": "*"
     },
